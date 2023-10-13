@@ -8,19 +8,12 @@ class CodersArrays {
   length(...data) {
     return this.data.length;
   }
-}
+};
 
-
-  push() {
-    for (let position = 0; position < data.length; position++) {
-      this.data.push(numbers[position]);
-    }
-
+  push(AddedNumber) {
+    const length = this.length();
+    this.data[length] = addedNumber;
+    return [...this.data, addedNumber]
   };
-
-
-const array = new CodersArrays(3, 8, 10, 2);
-
-console.log(array.numbers);
 
 export default CodersArrays;
